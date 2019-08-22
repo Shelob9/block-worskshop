@@ -2,6 +2,8 @@
 
 The steps below are over-simplifed. This code goes with an in person workshop.
 
+[Download Slides](https://github.com/Shelob9/block-worskshop/raw/master/WCORL2019%20Block%20Development%20Workshop.pdf)
+
 ## Introduction
 
 This repo has the end result of setting up the repo, adding a static block and then making it editable. The steps below walk you through that process. 
