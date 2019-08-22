@@ -8,25 +8,28 @@ This repo has the end result of setting up the repo, adding a static block and t
 
 ### Requirments
 * Your computer should have:
-  * [npm]()
-  * [WordPress]()
+  * [Node & npm](https://nodejs.org/en/)
+  * [WordPress](https://wordpress.org/download/)
   * A local development environment.
-  * [Docker]() OPTIONAL.
-  * [git]() OPTIONAL.
+ * Optional:
+  * git
+  * Docker
    
 ### Installing (Optional)
 
 If you want to use this as is:
 * Clone repo:
-  * `git clone ...`
-  * You should clone into the plugin directory of your local site OR into an empty directory -- if you wish to use included [docker-compose file]() for local development.
+  * `git clone https://github.com/Shelob9/block-worskshop`
+  * You should clone into the plugin directory of your local site OR into an empty directory -- if you wish to use included [docker-compose file](https://github.com/Shelob9/block-worskshop/blob/master/docker-compose.yml) for local development.
 * Swith to the plugin's directory and install dependencies.
   * `cd block-workshop`
   * `npm install`
 * IF using provided local environement:
   * `docker-compose up -d`
 
-## Create Your Block
+## Write Code! Make Blocks
+
+### Create Your Block Plugin
 
 * Create package.json:
   *  `npm init`
@@ -42,7 +45,8 @@ node_modules/
 vendor/
 build/
 ```
-## Setup Files
+
+### Setup Files
 
 * Create `src/index.js`
 * Put some JavaScript in there.
@@ -51,7 +55,7 @@ build/
   * You should see built JavaScript in `build/`
 * Be impressed by how simple webpack and Babel are to use :)
 
-## Register With WordPress
+### Register With WordPress
 
 * Create a block.json
   * https://gist.github.com/Shelob9/f2c97a5803d02a8b82217af670b5b008#file-block-json
@@ -71,11 +75,10 @@ build/
 * To ship for production:
   * `npm run build`
 
-## Make Block Editable
+### Make Block Editable
 
 * Install new dependencies:
-  * `npm i @wordpress/editor @wordpress/componen
-ts`
+  * `npm i @wordpress/editor @wordpress/components`
 * Import `TextControl` from `@wordpress/components`
   * Use for editting message
 * Import `InspectorControls` from `@wordpress/editor`
@@ -85,3 +88,5 @@ ts`
 * Display current value of message in edit and save callbacks.
 * Use `TextControl` to created edit interface for block.
 * Wrap the control in `InsepctorControls` so it goes in the inspector controls.
+
+
