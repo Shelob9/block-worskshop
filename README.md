@@ -23,3 +23,10 @@ build/
   * You should see built JavaScript in `build/`
 * Be impressed by how simple webpack and Babel are to use :)
 
+## Register With WordPress
+* Create a block.json
+  * https://gist.github.com/Shelob9/f2c97a5803d02a8b82217af670b5b008#file-block-json
+* Create a main plugin file to enqueue JavaScript and CSS.
+  * https://gist.github.com/Shelob9/f2c97a5803d02a8b82217af670b5b008#file-plugin-php
+
+

@@ -1,0 +1,19 @@
+{
+    "name": "josh/block-workshop",
+    "title": "Block Name",
+    "category": "common",
+    "icon": "star",
+    "description": "Says Hi To Roy",
+    "keywords": [
+        "alert",
+        "message"
+    ],
+    "textDomain": "block-workshop",
+    "attributes": {
+        "message": {
+            "type": "string",
+            "default": "Hi Roy"
+        }
+    },
+    "editorScript": "build/index.js"
+}
