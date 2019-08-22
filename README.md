@@ -2,6 +2,30 @@
 
 The steps below are over-simplifed. This code goes with an in person workshop.
 
+## Introduction
+
+This repo has the end result of setting up the repo, adding a static block and then making it editable. The steps below walk you through that process. 
+
+### Requirments
+* Your computer should have:
+  * [npm]()
+  * [WordPress]()
+  * A local development environment.
+  * [Docker]() OPTIONAL.
+  * [git]() OPTIONAL.
+   
+### Installing (Optional)
+
+If you want to use this as is:
+* Clone repo:
+  * `git clone ...`
+  * You should clone into the plugin directory of your local site OR into an empty directory -- if you wish to use included [docker-compose file]() for local development.
+* Swith to the plugin's directory and install dependencies.
+  * `cd block-workshop`
+  * `npm install`
+* IF using provided local environement:
+  * `docker-compose up -d`
+
 ## Create Your Block
 
 * Create package.json:
