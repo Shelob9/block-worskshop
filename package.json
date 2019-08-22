@@ -1,0 +1,22 @@
+{
+  "name": "block-workshop",
+  "version": "0.0.1",
+  "description": "WordCamp Orlando Block Workshop",
+  "main": "src/index.js",
+  "author": "Josh Pollock <Josh@SaturdayDrive.io>",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "@wordpress/scripts": "^3.4.0"
+  },
+  "scripts": {
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "start": "wp-scripts start",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js"
+  }
+}
