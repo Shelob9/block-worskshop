@@ -1,5 +1,9 @@
+# How To Make WordPress Blocks
+
+The steps below are over-simplifed. This code goes with an in person workshop.
 
 ## Create Your Block
+
 * Create package.json:
   *  `npm init`
   *  Answer questions. Don't forget to use GPL-2.0 or GPL-3.0 license.
@@ -8,14 +12,14 @@
 * Update "scripts" in package.json
   * [Copy from README](https://www.npmjs.com/package/@wordpress/scripts#setup)
 * Ignore directories in .gitingore:
-
-```
+  
+```bash
 node_modules/
 vendor/
 build/
 ```
-
 ## Setup Files
+
 * Create `src/index.js`
 * Put some JavaScript in there.
 * Compile it to make sure everything works.
@@ -24,12 +28,14 @@ build/
 * Be impressed by how simple webpack and Babel are to use :)
 
 ## Register With WordPress
+
 * Create a block.json
   * https://gist.github.com/Shelob9/f2c97a5803d02a8b82217af670b5b008#file-block-json
 * Create a main plugin file to enqueue JavaScript and CSS.
   * https://gist.github.com/Shelob9/f2c97a5803d02a8b82217af670b5b008#file-plugin-php
 
 ### Create Your Block
+
 * Open `src/index.js`
 * Write Some JavaScript:
   * Import dependencies
@@ -41,7 +47,7 @@ build/
 * To ship for production:
   * `npm run build`
 
-### Make Block Editable
+## Make Block Editable
 
 * Install new dependencies:
   * `npm i @wordpress/editor @wordpress/componen
@@ -55,5 +61,3 @@ ts`
 * Display current value of message in edit and save callbacks.
 * Use `TextControl` to created edit interface for block.
 * Wrap the control in `InsepctorControls` so it goes in the inspector controls.
-
-
