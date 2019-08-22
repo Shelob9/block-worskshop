@@ -29,4 +29,15 @@ build/
 * Create a main plugin file to enqueue JavaScript and CSS.
   * https://gist.github.com/Shelob9/f2c97a5803d02a8b82217af670b5b008#file-plugin-php
 
+### Create Your Block
+* Open `src/index.js`
+* Write Some JavaScript:
+  * Import dependencies
+  * `registerBlockType()`
+  * Edit Callback
+  * Save Callback
+* For manual testing while developing
+  * `npm run start`
+* To ship for production:
+  * `npm run build`
 
