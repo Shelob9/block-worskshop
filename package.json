@@ -6,6 +6,8 @@
   "author": "Josh Pollock <Josh@SaturdayDrive.io>",
   "license": "GPL-2.0",
   "dependencies": {
+    "@wordpress/components": "^8.1.0",
+    "@wordpress/editor": "^9.5.0",
     "@wordpress/scripts": "^3.4.0"
   },
   "scripts": {

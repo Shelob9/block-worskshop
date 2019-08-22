@@ -41,3 +41,19 @@ build/
 * To ship for production:
   * `npm run build`
 
+### Make Block Editable
+
+* Install new dependencies:
+  * `npm i @wordpress/editor @wordpress/componen
+ts`
+* Import `TextControl` from `@wordpress/components`
+  * Use for editting message
+* Import `InspectorControls` from `@wordpress/editor`
+* Add message attribute
+* Get current value of message from `attributes` prop passed to save and edit.
+* Create update function for message using `setAttributes` prop passed to edit callback.
+* Display current value of message in edit and save callbacks.
+* Use `TextControl` to created edit interface for block.
+* Wrap the control in `InsepctorControls` so it goes in the inspector controls.
+
+
