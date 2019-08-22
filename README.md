@@ -14,3 +14,12 @@ node_modules/
 vendor/
 build/
 ```
+
+## Setup Files
+* Create `src/index.js`
+* Put some JavaScript in there.
+* Compile it to make sure everything works.
+  * `npm run build`
+  * You should see built JavaScript in `build/`
+* Be impressed by how simple webpack and Babel are to use :)
+
