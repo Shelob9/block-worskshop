@@ -1,5 +1,5 @@
 import { registerBlockType } from "@wordpress/blocks";
-import { createElement } from "@wordpress/element";
+import { createElement, Fragment } from "@wordpress/element";
 import { __ } from "@wordpress/i18n";
 import { TextControl } from "@wordpress/components";
 import { InspectorControls } from "@wordpress/editor";
@@ -16,7 +16,7 @@ registerBlockType("josh/block-workshop", {
   supports: {
     html: false
   },
-  edit({ className, attributes, setAttributes }) {
+  edit({ className, attributes, setAttributes, isSelected }) {
     //Current message
     const { message } = attributes;
     //Function to update message
@@ -30,11 +30,13 @@ registerBlockType("josh/block-workshop", {
             label={__("Set Message")}
           />
         </InspectorControls>
-        <p>{message}</p>
+        <Fragment>
+          <p>{message}</p>
+        </Fragment>
       </div>
     );
   },
-  save({ className, props }) {
+  save({ className, attributes }) {
     const { message } = attributes;
     return (
       <div className={className}>
